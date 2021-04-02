@@ -18,11 +18,10 @@ public class AllItemsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_items);
         recyclerView=findViewById(R.id.rcv);
-        sdfghjkl;
-        recyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
         recyclerView.setLayoutManager(new VegaLayoutManager());
         recyclerView.setAdapter(new RecyclerViewAdapter(50));
-        fastScroller=findViewById(R.id.fasttrcv);
-        fastScroller.attachRecyclerView(recyclerView);
+//        fastScroller=findViewById(R.id.fasttrcv);
+//        fastScroller.attachRecyclerView(recyclerView);
     }
 }
