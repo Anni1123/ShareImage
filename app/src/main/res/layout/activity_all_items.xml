@@ -11,14 +11,14 @@
     android:layout_height="match_parent"
     android:id="@+id/rcv"
    />
-    <com.pluscubed.recyclerfastscroll.RecyclerFastScroller
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        app:rfs_barColor="#07adf4"
-        app:rfs_handlePressedColor="#df56C6"
-        android:id="@+id/fasttrcv"/>
+<!--    <com.pluscubed.recyclerfastscroll.RecyclerFastScroller-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        app:rfs_barColor="#07adf4"-->
+<!--        app:rfs_handlePressedColor="#df56C6"-->
+<!--        android:id="@+id/fasttrcv"/>-->
 
 
 </RelativeLayout>

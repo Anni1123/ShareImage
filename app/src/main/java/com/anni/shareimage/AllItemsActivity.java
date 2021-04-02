@@ -17,12 +17,11 @@ public class AllItemsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_items);
-        asdfghjkl
         recyclerView=findViewById(R.id.rcv);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
         recyclerView.setLayoutManager(new VegaLayoutManager());
         recyclerView.setAdapter(new RecyclerViewAdapter(50));
-        fastScroller=findViewById(R.id.fasttrcv);
-        fastScroller.attachRecyclerView(recyclerView);
+//        fastScroller=findViewById(R.id.fasttrcv);
+//        fastScroller.attachRecyclerView(recyclerView);
     }
 }
