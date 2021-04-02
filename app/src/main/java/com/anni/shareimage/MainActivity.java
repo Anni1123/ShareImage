@@ -42,8 +42,6 @@ public class MainActivity extends AppCompatActivity {
    protected void onCreate(Bundle savedInstanceState) {
        super.onCreate(savedInstanceState);
        setContentView(R.layout.activity_main);
-//       share=findViewById(R.id.share);
-//       imageView=findViewById(R.id.shareimage);
        TextView text=findViewById(R.id.click);
        text.setOnClickListener(new View.OnClickListener() {
            @Override
@@ -52,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
            }
        });
        //initialising text field where we will enter data
+
+//       share=findViewById(R.id.share);
+//       imageView=findViewById(R.id.shareimage);
 //       share.setOnClickListener(new View.OnClickListener() {
 //           @Override
 //           public void onClick(View v) {
