@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,7 +16,40 @@
         android:textSize="32sp"
         android:padding="16dp"
         android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/select"
 
+        android:text="select"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wave"
+        android:text="Wave View"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/html"
+        android:text="Html"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zoom"
+        android:text="zoom"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
 <!--    <androidx.recyclerview.widget.RecyclerView-->
 <!--        android:id="@+id/recyclerView"-->
 <!--        android:layout_width="match_parent"-->
@@ -28,7 +61,7 @@
 <!--        android:layout_gravity="bottom"-->
 <!--        android:layout_height="wrap_content"-->
 <!--        app:layout_behavior="com.luseen.spacenavigation.SpaceNavigationViewBehavior" />-->
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+<!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
 
     <!--<?xml version="1.0" encoding="utf-8"?>-->
 <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
@@ -62,3 +95,4 @@
 <!--        android:background="@color/colorPrimary"-->
 <!--        />-->
 <!--</LinearLayout>-->
+</LinearLayout>

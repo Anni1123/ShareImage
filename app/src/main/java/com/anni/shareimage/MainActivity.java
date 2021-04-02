@@ -43,10 +43,38 @@ public class MainActivity extends AppCompatActivity {
        super.onCreate(savedInstanceState);
        setContentView(R.layout.activity_main);
        TextView text=findViewById(R.id.click);
+       TextView select=findViewById(R.id.select);
+       TextView html=findViewById(R.id.html);
+       TextView wave=findViewById(R.id.wave);
+       TextView zoom=findViewById(R.id.zoom);
        text.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
                startActivity(new Intent(MainActivity.this,ExpandableNewsActivity.class));
+           }
+       });
+       select.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,AllItemsActivity.class));
+           }
+       });
+       wave.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,WaveLoadingView.class));
+           }
+       });
+       html.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,HtmlTextView.class));
+           }
+       });
+       zoom.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,ZoomTextView.class));
            }
        });
        //initialising text field where we will enter data
