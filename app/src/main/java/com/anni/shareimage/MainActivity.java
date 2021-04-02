@@ -15,6 +15,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import android.widget.TextView;
 import android.widget.Toast;
 
 import android.widget.Button;
@@ -24,6 +25,8 @@ import com.luseen.spacenavigation.SpaceItem;
 import com.luseen.spacenavigation.SpaceNavigationView;
 import com.luseen.spacenavigation.SpaceOnClickListener;
 import com.luseen.spacenavigation.SpaceOnLongClickListener;
+
+import org.w3c.dom.Text;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -39,20 +42,27 @@ public class MainActivity extends AppCompatActivity {
    protected void onCreate(Bundle savedInstanceState) {
        super.onCreate(savedInstanceState);
        setContentView(R.layout.activity_main);
-       share=findViewById(R.id.share);
-       imageView=findViewById(R.id.shareimage);
-       //initialising text field where we will enter data
-       share.setOnClickListener(new View.OnClickListener() {
+//       share=findViewById(R.id.share);
+//       imageView=findViewById(R.id.shareimage);
+       TextView text=findViewById(R.id.click);
+       text.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               //Now share image function will be called
-               //here we  will be passing the text to share
-//                Getting drawbale value from iamge
-               BitmapDrawable bitmapDrawable=(BitmapDrawable)imageView.getDrawable();
-               Bitmap bitmap=bitmapDrawable.getBitmap();
-               shareImageandText(bitmap);
+               startActivity(new Intent(MainActivity.this,ExpandableNewsActivity.class));
            }
        });
+       //initialising text field where we will enter data
+//       share.setOnClickListener(new View.OnClickListener() {
+//           @Override
+//           public void onClick(View v) {
+//               //Now share image function will be called
+//               //here we  will be passing the text to share
+////                Getting drawbale value from iamge
+//               BitmapDrawable bitmapDrawable=(BitmapDrawable)imageView.getDrawable();
+//               Bitmap bitmap=bitmapDrawable.getBitmap();
+//               shareImageandText(bitmap);
+//           }
+//       });
 
    }
    private void shareImageandText(Bitmap bitmap) {
