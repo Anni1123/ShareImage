@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ZoomTextView"></activity>
+        <activity android:name=".GravityViewActivity"></activity>
+        <activity android:name=".ZoomTextView" />
         <activity android:name=".HtmlTextView" />
         <activity android:name=".WaveLoadingView" />
         <activity android:name=".AllItemsActivity" />

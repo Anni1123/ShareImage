@@ -41,6 +41,8 @@ dependencies {
     implementation 'me.itangqi.waveloadingview:library:0.3.5'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'co.gofynd.library:gravity-view:1.0'
+
     implementation 'com.github.armcha:SpaceNavigationView:1.6.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }

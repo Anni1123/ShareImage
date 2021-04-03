@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
        TextView html=findViewById(R.id.html);
        TextView wave=findViewById(R.id.wave);
        TextView zoom=findViewById(R.id.zoom);
+       TextView gravity=findViewById(R.id.gravity);
        text.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
@@ -75,6 +76,12 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick(View v) {
                startActivity(new Intent(MainActivity.this,ZoomTextView.class));
+           }
+       });
+       gravity.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,GravityViewActivity.class));
            }
        });
        //initialising text field where we will enter data
