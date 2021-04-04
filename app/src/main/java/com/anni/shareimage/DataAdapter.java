@@ -42,19 +42,20 @@ public class DataAdapter extends RecyclerView.Adapter {
             @Override
             public void onClick(View v) {
                 if(expand){
-
                     ((MyHolder)holder).relative.setVisibility(View.GONE);
                 }else {
                     ((MyHolder)holder).relative.setVisibility(View.VISIBLE);
                 }
             }
         });
-        ((MyHolder)holder).name.setOnClickListener(new View.OnClickListener() {
+
+        ((MyHolder)holder).relative.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ((MyHolder)holder).relative.setVisibility(View.GONE);
             }
         });
+
     }
 
     @Override

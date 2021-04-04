@@ -1,18 +1,12 @@
 package com.anni.shareimage;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 import android.widget.TextView;
@@ -21,17 +15,8 @@ import android.widget.Toast;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.luseen.spacenavigation.SpaceItem;
-import com.luseen.spacenavigation.SpaceNavigationView;
-import com.luseen.spacenavigation.SpaceOnClickListener;
-import com.luseen.spacenavigation.SpaceOnLongClickListener;
-
-import org.w3c.dom.Text;
-
 import java.io.File;
 import java.io.FileOutputStream;
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -48,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
        TextView wave=findViewById(R.id.wave);
        TextView zoom=findViewById(R.id.zoom);
        TextView gravity=findViewById(R.id.gravity);
+       TextView pattern=findViewById(R.id.pattern);
+       TextView zooms=findViewById(R.id.zooms);
+       TextView avoid=findViewById(R.id.avoidurl);
        text.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
@@ -82,6 +70,24 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick(View v) {
                startActivity(new Intent(MainActivity.this,GravityViewActivity.class));
+           }
+       });
+       pattern.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,PatternLockV.class));
+           }
+       });
+       zooms.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,ZoomScrollView.class));
+           }
+       });
+       avoid.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this, AddUrl.class));
            }
        });
        //initialising text field where we will enter data

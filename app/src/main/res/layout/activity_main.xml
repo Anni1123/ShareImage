@@ -58,6 +58,31 @@
         android:textSize="32sp"
         android:padding="16dp"
         android:textColor="#000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pattern"
+        android:text="pattern"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zooms"
+        android:text="Zoom Scroll View"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/avoidurl"
+        android:text="Enter Url"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
 <!--    <androidx.recyclerview.widget.RecyclerView-->
 <!--        android:id="@+id/recyclerView"-->
 <!--        android:layout_width="match_parent"-->
