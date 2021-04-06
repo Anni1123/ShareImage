@@ -36,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
        TextView pattern=findViewById(R.id.pattern);
        TextView zooms=findViewById(R.id.zooms);
        TextView avoid=findViewById(R.id.avoidurl);
+       TextView explode=findViewById(R.id.explode);
+       TextView selectt=findViewById(R.id.selectt);
+       TextView full=findViewById(R.id.full);
        text.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
@@ -88,6 +91,24 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick(View v) {
                startActivity(new Intent(MainActivity.this, AddUrl.class));
+           }
+       });
+       selectt.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this, SelectText.class));
+           }
+       });
+       explode.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this, Explosionactivity.class));
+           }
+       });
+       full.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this, FullScreem.class));
            }
        });
        //initialising text field where we will enter data

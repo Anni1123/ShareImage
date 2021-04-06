@@ -6,7 +6,7 @@ android {
     buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "com.anni.shareimage"
-        minSdkVersion 19
+        minSdkVersion 22
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -48,6 +48,9 @@ dependencies {
     implementation 'com.andrognito.patternlockview:patternlockview:1.0.0'
     // Optional, for RxJava2 adapter
     implementation 'com.andrognito.patternlockview:patternlockview-reactive:1.0.0'
+
+    implementation 'tyrantgit:explosionfield:1.0.1'
+
 
     implementation 'com.github.armcha:SpaceNavigationView:1.6.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
