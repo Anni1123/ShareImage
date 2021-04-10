@@ -113,6 +113,38 @@
         android:textSize="32sp"
         android:padding="16dp"
         android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/copy"
+        android:text="Copy Text"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/animation"
+        android:text="Start Typing Animation"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blink"
+        android:text="Blink Effect"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clickable"
+        android:text="Click"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
 </LinearLayout>
 
     <!--    <androidx.recyclerview.widget.RecyclerView-->

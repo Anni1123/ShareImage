@@ -39,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
        TextView explode=findViewById(R.id.explode);
        TextView selectt=findViewById(R.id.selectt);
        TextView full=findViewById(R.id.full);
+       TextView copy=findViewById(R.id.copy);
+       TextView animation=findViewById(R.id.animation);
+       TextView blink=findViewById(R.id.blink);
+       TextView click=findViewById(R.id.clickable);
        text.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
@@ -109,6 +113,30 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick(View v) {
                startActivity(new Intent(MainActivity.this, FullScreem.class));
+           }
+       });
+       click.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this, Clickable.class));
+           }
+       });
+       copy.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this, CopyText.class));
+           }
+       });
+       animation.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this, TypingAnimation.class));
+           }
+       });
+       blink.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this, BlinkEffect.class));
            }
        });
        //initialising text field where we will enter data
