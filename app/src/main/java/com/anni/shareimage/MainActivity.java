@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
        TextView animation=findViewById(R.id.animation);
        TextView blink=findViewById(R.id.blink);
        TextView click=findViewById(R.id.clickable);
+       TextView addimageview=findViewById(R.id.addimageview);
+       TextView viewgif=findViewById(R.id.viewgif);
        text.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
@@ -137,6 +139,18 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick(View v) {
                startActivity(new Intent(MainActivity.this, BlinkEffect.class));
+           }
+       });
+       addimageview.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this, AddImageViw.class));
+           }
+       });
+       viewgif.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this, ViewGif.class));
            }
        });
        //initialising text field where we will enter data
