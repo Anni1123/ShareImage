@@ -161,6 +161,30 @@
         android:textSize="32sp"
         android:padding="16dp"
         android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flip Coin"
+        android:id="@+id/flip"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Button"
+        android:id="@+id/addb"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Increase Brightness"
+        android:id="@+id/bright"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
 </LinearLayout>
 
     <!--    <androidx.recyclerview.widget.RecyclerView-->

@@ -45,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
        TextView click=findViewById(R.id.clickable);
        TextView addimageview=findViewById(R.id.addimageview);
        TextView viewgif=findViewById(R.id.viewgif);
+       TextView flip=findViewById(R.id.flip);
+       TextView addb=findViewById(R.id.addb);
+       TextView bright=findViewById(R.id.bright);
        text.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
@@ -151,6 +154,24 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick(View v) {
                startActivity(new Intent(MainActivity.this, ViewGif.class));
+           }
+       });
+       flip.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this, RotateCoin.class));
+           }
+       });
+       bright.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this, Brightness.class));
+           }
+       });
+       addb.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this, AddButton.class));
            }
        });
        //initialising text field where we will enter data
