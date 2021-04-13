@@ -15,6 +15,8 @@ import android.widget.Toast;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.santalu.maskara.widget.MaskEditText;
+
 import java.io.File;
 import java.io.FileOutputStream;
 
@@ -48,6 +50,34 @@ public class MainActivity extends AppCompatActivity {
        TextView flip=findViewById(R.id.flip);
        TextView addb=findViewById(R.id.addb);
        TextView bright=findViewById(R.id.bright);
+       TextView dynamic=findViewById(R.id.dynamic);
+       TextView superbottom=findViewById(R.id.superbottom);
+       TextView lotiebar=findViewById(R.id.lotiebar);
+       TextView maskedit=findViewById(R.id.maskedit);
+       dynamic.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,DynamicActivity.class));
+           }
+       });
+       maskedit.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this, MaskEditTextActivity.class));
+           }
+       });
+       lotiebar.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,ContextualMenu.class));
+           }
+       });
+       superbottom.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,SuperBotttomBar.class));
+           }
+       });
        text.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {

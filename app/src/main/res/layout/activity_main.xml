@@ -185,6 +185,38 @@
         android:textSize="32sp"
         android:padding="16dp"
         android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dynamic Fragment"
+        android:id="@+id/dynamic"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SuperBottombar"
+        android:id="@+id/superbottom"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LottieBar"
+        android:id="@+id/lotiebar"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mask Edit"
+        android:id="@+id/maskedit"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
 </LinearLayout>
 
     <!--    <androidx.recyclerview.widget.RecyclerView-->
