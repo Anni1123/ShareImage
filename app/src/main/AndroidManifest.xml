@@ -17,6 +17,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ViewWeb"></activity>
+        <activity android:name=".PhoneandEmailActivity" />
+        <activity android:name=".SelectImage" />
+        <activity android:name=".PhoneClickable" />
         <activity android:name=".MaskEditTextActivity" />
         <activity android:name=".ContextualMenu" />
         <activity android:name=".SuperBotttomBar" />

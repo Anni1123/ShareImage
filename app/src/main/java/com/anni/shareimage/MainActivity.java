@@ -50,14 +50,42 @@ public class MainActivity extends AppCompatActivity {
        TextView flip=findViewById(R.id.flip);
        TextView addb=findViewById(R.id.addb);
        TextView bright=findViewById(R.id.bright);
+       TextView web=findViewById(R.id.web);
        TextView dynamic=findViewById(R.id.dynamic);
        TextView superbottom=findViewById(R.id.superbottom);
        TextView lotiebar=findViewById(R.id.lotiebar);
+       TextView phone=findViewById(R.id.phone);
        TextView maskedit=findViewById(R.id.maskedit);
+       TextView selecti=findViewById(R.id.selecti);
+       TextView tclickable=findViewById(R.id.tclickable);
        dynamic.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
                startActivity(new Intent(MainActivity.this,DynamicActivity.class));
+           }
+       });
+       web.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,ViewWeb.class));
+           }
+       });
+       phone.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,PhoneandEmailActivity.class));
+           }
+       });
+       selecti.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,SelectImage.class));
+           }
+       });
+       tclickable.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,PhoneClickable.class));
            }
        });
        maskedit.setOnClickListener(new View.OnClickListener() {
