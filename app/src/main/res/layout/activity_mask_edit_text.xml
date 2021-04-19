@@ -9,12 +9,19 @@
     tools:context=".MaskEditTextActivity">
 
     <com.santalu.maskara.widget.MaskEditText
-        android:id="@+id/edit_text_phone"
+        android:id="@+id/edit_text_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Current Date"
         android:inputType="phone"
         app:mask="##.##.####" />
+    <com.santalu.maskara.widget.MaskEditText
+        android:id="@+id/edit_text_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        app:mask="##########" />
 
     <Button
         android:layout_width="wrap_content"

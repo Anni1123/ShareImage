@@ -19,6 +19,7 @@ import org.w3c.dom.Text;
 
 public class SelectText extends AppCompatActivity {
     TextView select;
+    EditText selecte;
 
 
     @Override
@@ -26,6 +27,16 @@ public class SelectText extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_text);
         select=findViewById(R.id.select);
+        selecte=findViewById(R.id.selecte);
         select.setTextIsSelectable(true);
+
+        selecte.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+               selecte.setCursorVisible(true);
+               Toast.makeText(SelectText.this,"Visible",Toast.LENGTH_LONG).show();
+               return false;
+            }
+        });
     }
 }

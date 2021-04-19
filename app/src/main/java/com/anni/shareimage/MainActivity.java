@@ -45,17 +45,23 @@ public class MainActivity extends AppCompatActivity {
        TextView animation=findViewById(R.id.animation);
        TextView blink=findViewById(R.id.blink);
        TextView click=findViewById(R.id.clickable);
+       TextView datep=findViewById(R.id.datep);
        TextView addimageview=findViewById(R.id.addimageview);
        TextView viewgif=findViewById(R.id.viewgif);
        TextView flip=findViewById(R.id.flip);
        TextView addb=findViewById(R.id.addb);
+       TextView striket=findViewById(R.id.striket);
        TextView bright=findViewById(R.id.bright);
        TextView web=findViewById(R.id.web);
        TextView dynamic=findViewById(R.id.dynamic);
        TextView superbottom=findViewById(R.id.superbottom);
        TextView lotiebar=findViewById(R.id.lotiebar);
        TextView phone=findViewById(R.id.phone);
+       TextView whatsnew=findViewById(R.id.whatsnew);
+       TextView colors=findViewById(R.id.colors);
+       TextView sendimage=findViewById(R.id.sendimage);
        TextView maskedit=findViewById(R.id.maskedit);
+       TextView photof=findViewById(R.id.photf);
        TextView selecti=findViewById(R.id.selecti);
        TextView tclickable=findViewById(R.id.tclickable);
        dynamic.setOnClickListener(new View.OnClickListener() {
@@ -64,10 +70,46 @@ public class MainActivity extends AppCompatActivity {
                startActivity(new Intent(MainActivity.this,DynamicActivity.class));
            }
        });
+       photof.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,PhotoFilter.class));
+           }
+       });
        web.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
                startActivity(new Intent(MainActivity.this,ViewWeb.class));
+           }
+       });
+       whatsnew.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,WhataNewL.class));
+           }
+       });
+       colors.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,ColorShadow.class));
+           }
+       });
+       datep.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,DatePicker.class));
+           }
+       });
+       sendimage.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,SendImageActivity.class));
+           }
+       });
+       striket.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,StrikethroughAcivity.class));
            }
        });
        phone.setOnClickListener(new View.OnClickListener() {

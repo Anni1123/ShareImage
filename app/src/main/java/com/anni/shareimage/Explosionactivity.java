@@ -11,6 +11,7 @@ import tyrantgit.explosionfield.ExplosionField;
 
 public class Explosionactivity extends AppCompatActivity {
 
+    boolean explod=true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,8 +21,13 @@ public class Explosionactivity extends AppCompatActivity {
         explode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                explosionField.explode(explode);
+                if(explod){
+                    //as we click on the image it will explode
+                    explosionField.explode(explode);
+                    explod=false;
+                }
             }
         });
+
     }
 }

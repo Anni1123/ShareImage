@@ -16,6 +16,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter {
 
     private RecyclerClickListener recyclerClickListener;
 
+
     public RecyclerAdapter(List<String> colorList) {
         this.colorList = colorList;
     }

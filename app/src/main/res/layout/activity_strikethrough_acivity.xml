@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".StrikethroughAcivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Geeks For Geeks"
+        android:id="@+id/striketext"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="32sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/strike"
+        android:textColor="@color/colorPrimary"
+        android:textSize="32sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Geeks For Geeks"
+        android:foreground="@drawable/strikethrough"
+        android:textColor="@color/colorPrimary"
+        android:textSize="32sp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Change"
+        android:textColor="@color/black"
+        android:id="@+id/change"/>
+</LinearLayout>

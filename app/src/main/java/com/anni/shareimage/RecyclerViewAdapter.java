@@ -9,9 +9,12 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
     private int mcount;
+
 
     public RecyclerViewAdapter(int mcount) {
         this.mcount = mcount;

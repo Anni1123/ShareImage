@@ -250,6 +250,54 @@
         android:textSize="32sp"
         android:padding="16dp"
         android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Image"
+        android:id="@+id/sendimage"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strike through"
+        android:id="@+id/striket"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Picker"
+        android:id="@+id/datep"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color Shadow"
+        android:id="@+id/colors"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whats New Library"
+        android:id="@+id/whatsnew"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Photo filter"
+        android:id="@+id/photf"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
 </LinearLayout>
 
     <!--    <androidx.recyclerview.widget.RecyclerView-->

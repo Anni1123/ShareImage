@@ -15,9 +15,18 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:requestLegacyExternalStorage="true"
+
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewWeb"></activity>
+        <activity android:name=".PhotoFilter"></activity>
+        <activity android:name=".WhataNewL" />
+        <activity android:name=".ColorShadow" />
+        <activity android:name=".DatePicker" />
+        <activity android:name=".StrikethroughAcivity" />
+        <activity android:name=".SendImageActivity" />
+        <activity android:name=".ReceieveImage" />
+        <activity android:name=".ViewWeb" />
         <activity android:name=".PhoneandEmailActivity" />
         <activity android:name=".SelectImage" />
         <activity android:name=".PhoneClickable" />
