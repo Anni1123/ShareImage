@@ -14,12 +14,22 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:requestLegacyExternalStorage="true"
-
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PhotoFilter"></activity>
+        <activity android:name=".AndroidViewAnimation"></activity>
+        <activity android:name=".BlurImag" />
+        <activity android:name=".LongShadow" />
+        <activity android:name=".ClockAnimationView" />
+        <activity android:name=".ZigzagVu" />
+        <activity android:name=".StateProgress" />
+        <activity android:name=".FoldingCell" />
+        <activity android:name=".SnowfallUi" />
+        <activity android:name=".TapTarget" />
+        <activity android:name=".RulerPicker" />
+        <activity android:name=".CircularDialog" />
+        <activity android:name=".PhotoFilter" />
         <activity android:name=".WhataNewL" />
         <activity android:name=".ColorShadow" />
         <activity android:name=".DatePicker" />

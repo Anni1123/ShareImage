@@ -20,7 +20,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
 }
 
 dependencies {
@@ -45,10 +47,14 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     implementation 'org.sufficientlysecure:html-textview:4.0'
     implementation 'com.stone.vega.library:VegaLayoutManager:1.0.6'
+    implementation 'com.github.hassanusman:CircularDialogs:1.2'
     implementation 'me.itangqi.waveloadingview:library:0.3.5'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'com.github.chuross:extra-textview:1.1.3'
 
+
+    implementation 'com.kevalpatel2106:ruler-picker:1.1'
     implementation 'io.github.tonnyl:whatsnew:0.1.7'
 
     implementation 'com.github.mukeshsolanki:photofilter:1.0.2'
@@ -60,15 +66,19 @@ dependencies {
     // Optional, for RxJava2 adapter
     implementation 'com.andrognito.patternlockview:patternlockview-reactive:1.0.0'
 
-
-    implementation 'com.github.armcha:ColoredShadowImageView:1.1.0'
+    implementation 'com.getkeepsafe.taptargetview:taptargetview:1.13.2'
+    implementation 'com.github.jetradarmobile:android-snowfall:1.2.1'
 
     implementation 'tyrantgit:explosionfield:1.0.1'
 
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
+    implementation 'com.ramotion.foldingcell:folding-cell:1.2.3'
+
+    implementation 'com.kofigyan.stateprogressbar:stateprogressbar:1.0.0'
 
     implementation 'com.github.chrisbanes:PhotoView:2.3.0'
     implementation 'com.github.santalu:mask-edittext:1.0.0'
+    implementation 'com.sdsmdg.harjot:longshadows:1.0.1'
 
     implementation 'com.github.10clouds:FluidBottomNavigation-android:1.1'
 

@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
        TextView zooms=findViewById(R.id.zooms);
        TextView avoid=findViewById(R.id.avoidurl);
        TextView explode=findViewById(R.id.explode);
+       TextView fold=findViewById(R.id.fold);
        TextView selectt=findViewById(R.id.selectt);
        TextView full=findViewById(R.id.full);
        TextView copy=findViewById(R.id.copy);
@@ -54,13 +55,19 @@ public class MainActivity extends AppCompatActivity {
        TextView bright=findViewById(R.id.bright);
        TextView web=findViewById(R.id.web);
        TextView dynamic=findViewById(R.id.dynamic);
+       TextView zigzag=findViewById(R.id.zigzag);
        TextView superbottom=findViewById(R.id.superbottom);
        TextView lotiebar=findViewById(R.id.lotiebar);
        TextView phone=findViewById(R.id.phone);
+       TextView circulardi=findViewById(R.id.circulardi);
+       TextView extratext=findViewById(R.id.extrat);
+       TextView ruler=findViewById(R.id.ruler);
        TextView whatsnew=findViewById(R.id.whatsnew);
        TextView colors=findViewById(R.id.colors);
        TextView sendimage=findViewById(R.id.sendimage);
        TextView maskedit=findViewById(R.id.maskedit);
+       TextView snowfall=findViewById(R.id.snowfall);
+       TextView progress=findViewById(R.id.progressbae);
        TextView photof=findViewById(R.id.photf);
        TextView selecti=findViewById(R.id.selecti);
        TextView tclickable=findViewById(R.id.tclickable);
@@ -68,6 +75,36 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick(View v) {
                startActivity(new Intent(MainActivity.this,DynamicActivity.class));
+           }
+       });
+       progress.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,StateProgress.class));
+           }
+       });
+       zigzag.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,LongShadow.class));
+           }
+       });
+       snowfall.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,SnowfallUi.class));
+           }
+       });
+       extratext.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,TapTarget.class));
+           }
+       });
+       fold.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,FoldingCell.class));
            }
        });
        photof.setOnClickListener(new View.OnClickListener() {
@@ -80,6 +117,12 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick(View v) {
                startActivity(new Intent(MainActivity.this,ViewWeb.class));
+           }
+       });
+       circulardi.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this,CircularDialog.class));
            }
        });
        whatsnew.setOnClickListener(new View.OnClickListener() {
@@ -272,6 +315,12 @@ public class MainActivity extends AppCompatActivity {
            @Override
            public void onClick(View v) {
                startActivity(new Intent(MainActivity.this, AddButton.class));
+           }
+       });
+       ruler.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(MainActivity.this, RulerPicker.class));
            }
        });
        //initialising text field where we will enter data

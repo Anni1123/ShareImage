@@ -298,6 +298,62 @@
         android:textSize="32sp"
         android:padding="16dp"
         android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Circular dialog"
+        android:id="@+id/circulardi"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ruler Picker"
+        android:id="@+id/ruler"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap Target"
+        android:id="@+id/extrat"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SnowFall"
+        android:id="@+id/snowfall"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Folding cell"
+        android:id="@+id/fold"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State Progress Bar"
+        android:id="@+id/progressbae"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zig Zag View"
+        android:id="@+id/zigzag"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:textColor="#000"/>
 </LinearLayout>
 
     <!--    <androidx.recyclerview.widget.RecyclerView-->
