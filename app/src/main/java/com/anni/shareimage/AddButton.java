@@ -1,6 +1,6 @@
 package com.anni.shareimage;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActiviy;
 
 import android.os.Bundle;
 import android.view.View;
